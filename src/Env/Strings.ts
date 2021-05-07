@@ -9,6 +9,8 @@ export interface Es {
     welcome:       Login;
     startGame:     Login;
     welcomeBtns:   WelcomeBtns;
+    controls:      string;
+    controlsSub:   string;
     homeButton:    HomeButton;
     logout:        string;
     logoutAlert:   Login;

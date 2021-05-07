@@ -8,7 +8,6 @@
 	color: #fff;
 	font-size: 4em;
 	display: block;
-	pointer-events: none;
 	z-index: 10002;
 }
 
@@ -22,10 +21,25 @@
 	font-size: 1.35em;
 	display: block;
 	opacity: 0.7;
-	pointer-events: none;
 	z-index: 10002;
 
 	a {
 		color: #03a9f4;
+	}
+
+	transition: opacity 2s all;
+	opacity: 0.7;
+	transition-delay: 2s;
+}
+
+.header {
+	transition: opacity 2s all;
+	opacity: 1;
+	transition-delay: 2s;
+
+	&:hover {
+		pointer-events: none;
+		opacity: 0.1;
+		transition-delay: 0s;
 	}
 }

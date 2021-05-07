@@ -2,7 +2,11 @@
 import React, { useState } from 'react'
 
 // COMPONENTES
+import RecommendedMovements from 'Components/RecommendedMovements/RecommendedMovements'
+import LogoutButton from 'Components/LogoutButton/LogoutButton'
 import HomeButton from 'Components/HomeButton/HomeButton'
+import Controls from 'Components/Controls/Controls'
+import TimerView from 'Components/Timer/Timer'
 import Bike from 'Components/Bike/Bike'
 
 // HOOKS
@@ -79,16 +83,14 @@ const OnlineView: React.FC<OnlineViewProps> = (props: OnlineViewProps) => {
 	return (
 		<div>
 			<HomeButton promptToExit />
+			<RecommendedMovements disks={onlineGame?.disks || 7} />
+			<Controls opacity={0.3} />
+			<LogoutButton blockLogout />
 			<h1 className={Styles.title}>
 				{onlineGame?.title}
 				<p className={Styles.desc}>ID: {props.id}</p>
 			</h1>
-			{startGame && (
-				<div className={Styles.timer}>
-					<strong>{timer.minutes < 10 ? `0${timer.minutes}` : timer.minutes}</strong>:
-					<strong>{timer.seconds < 10 ? `0${timer.seconds}` : timer.seconds}</strong>
-				</div>
-			)}
+			<TimerView startGame={startGame} timer={timer} />
 			{startGame &&
 				onlineGame?.users.map((gUser, index: number) => (
 					<Bike

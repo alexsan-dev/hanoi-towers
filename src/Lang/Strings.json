@@ -23,6 +23,8 @@
 			"join": "Unirse",
 			"offline": "Offline"
 		},
+		"controls": "Para mover el tablero",
+		"controlsSub": "usa tu teclado.",
 		"homeButton": {
 			"title": "Regresar a inicio",
 			"body": "¿Estas seguro de querer regresar?, si regresas se perderá todo tu progreso en esta partida.",
@@ -46,7 +48,7 @@
 		"offlinePrompt": {
 			"title": "Crear partida",
 			"confirmText": "JUGAR",
-			"body": "Gracias por jugar, en esta partida juegas sin tiempo en modo libre, para iniciar indica el número de aros. Por ultimo solo presiona JUGAR."
+			"body": "Gracias por jugar, para iniciar indica el número de aros (máximo 7). Por ultimo solo presiona JUGAR."
 		},
 		"promptFields": {
 			"title": "Titulo de la partida",

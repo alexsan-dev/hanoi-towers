@@ -2,18 +2,19 @@
 	display: block;
 	list-style: none;
 	position: fixed;
-	max-height: 200px;
+	max-height: 220px;
 	top: 110px;
 	background: #f5f5f5;
 	overflow-y: scroll;
 	right: 30px;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-	padding: 15px;
+	padding: 10px;
 	border-radius: 8px;
+	font-size: 0.9em;
 
 	li {
-		margin-bottom: 12px;
+		margin-bottom: 10px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
