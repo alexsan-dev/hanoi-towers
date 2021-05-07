@@ -1,10 +1,8 @@
 // REACT
 import React, { useState } from 'react'
 
-// ASSETS
-import Logo from 'Assets/logo.png'
-
 // COMPONENTES
+import HomeButton from 'Components/HomeButton/HomeButton'
 import Bike from 'Components/Bike/Bike'
 
 // HOOKS
@@ -80,7 +78,7 @@ const OnlineView: React.FC<OnlineViewProps> = (props: OnlineViewProps) => {
 
 	return (
 		<div>
-			<img src={Logo} alt='logo' className={Styles.logo} />
+			<HomeButton promptToExit />
 			<h1 className={Styles.title}>
 				{onlineGame?.title}
 				<p className={Styles.desc}>ID: {props.id}</p>

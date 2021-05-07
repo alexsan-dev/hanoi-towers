@@ -20,7 +20,13 @@
 		},
 		"welcomeBtns": {
 			"create": "Crear",
-			"join": "Unirse"
+			"join": "Unirse",
+			"offline": "Offline"
+		},
+		"homeButton": {
+			"title": "Regresar a inicio",
+			"body": "¿Estas seguro de querer regresar?, si regresas se perderá todo tu progreso en esta partida.",
+			"confirmText": "Regresar"
 		},
 		"logout": "Cerrar sesión",
 		"initPrompt": {
@@ -32,6 +38,11 @@
 			"title": "Unirse a partida",
 			"confirmText": "Unirse",
 			"body": "Gracias por jugar, ingresa el ID de la partida a la que quieres unirte, y luego presiona unirse."
+		},
+		"offlinePrompt": {
+			"title": "Crear partida",
+			"confirmText": "JUGAR",
+			"body": "Gracias por jugar, en esta partida juegas sin tiempo en modo libre, para iniciar indica el número de aros. Por ultimo solo presiona JUGAR."
 		},
 		"promptFields": {
 			"title": "Titulo de la partida",

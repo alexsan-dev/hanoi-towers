@@ -1,3 +1,4 @@
+import React from 'react'
 import * as THREE from 'three'
 import EventsControls from './Controls'
 
@@ -8,7 +9,8 @@ const createGame = (
 	camera: THREE.Camera | null,
 	scene: THREE.Scene | null,
 	renderer: THREE.Renderer | null,
-	onWin?: () => void
+	onWin?: () => void,
+	offline?: boolean
 ) => {
 	if (camera && scene && renderer) {
 		// GLOBALES
@@ -146,9 +148,13 @@ const createGame = (
 						window.Alert({
 							title: `Felicitaciones ${name}`,
 							onConfirm: () => window.location.reload(),
-							body:
-								'Has completado todo el juego satisfactoriamente!, espera a que todos los jugadores finalicen.',
-							type: 'window',
+							body: `Has completado todo el juego satisfactoriamente!, ${
+								offline
+									? '¿Te gustaría reiniciar el juego?'
+									: 'espera a que todos los jugadores finalicen.'
+							}`,
+							type: offline ? 'confirm' : 'window',
+							cancelBtn: <></>,
 							fixed: true,
 						})
 					}, 300)

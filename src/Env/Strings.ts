@@ -3,16 +3,18 @@ export interface Strings {
 }
 
 export interface Es {
-    home:         Home;
-    login:        Login;
-    loginBtn:     string;
-    welcome:      Login;
-    startGame:    Login;
-    welcomeBtns:  WelcomeBtns;
-    logout:       string;
-    initPrompt:   Prompt;
-    joinPrompt:   Prompt;
-    promptFields: PromptFields;
+    home:          Home;
+    login:         Login;
+    loginBtn:      string;
+    welcome:       Login;
+    startGame:     Login;
+    welcomeBtns:   WelcomeBtns;
+    homeButton:    HomeButton;
+    logout:        string;
+    initPrompt:    HomeButton;
+    joinPrompt:    HomeButton;
+    offlinePrompt: HomeButton;
+    promptFields:  PromptFields;
 }
 
 export interface Home {
@@ -21,10 +23,10 @@ export interface Home {
     install:     string;
 }
 
-export interface Prompt {
+export interface HomeButton {
     title:       string;
-    confirmText: string;
     body:        string;
+    confirmText: string;
 }
 
 export interface Login {
@@ -42,6 +44,7 @@ export interface PromptFields {
 }
 
 export interface WelcomeBtns {
-    create: string;
-    join:   string;
+    create:  string;
+    join:    string;
+    offline: string;
 }

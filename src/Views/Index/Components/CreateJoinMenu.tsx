@@ -34,6 +34,7 @@ const createJoinMenu = (lang: Es, history: H.History<H.LocationState>) => {
 		...lang.joinPrompt,
 		type: 'confirm',
 		customElements: inputs,
+		cancelBtn: <></>,
 		confirmText: lang.welcomeBtns.join,
 		onConfirm: () => history.push(`/${id.trim()}`),
 	})

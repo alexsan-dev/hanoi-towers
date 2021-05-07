@@ -4,6 +4,7 @@ import React from 'react'
 // COMPONENTES
 import InstallButton from 'Components/InstallButton/InstallButton'
 import LogoutButton from 'Components/LogoutButton/LogoutButton'
+import HomeButton from 'Components/HomeButton/HomeButton'
 
 // HOOKS
 import { useStrings, useUser } from 'Hooks/Context'
@@ -28,6 +29,7 @@ const IndexView = () => {
 
 	return (
 		<div>
+			<HomeButton />
 			<h1 className={Styles.title}>{lang.home.title}</h1>
 			<p className={Styles.description}>
 				{lang.home.description},{' '}

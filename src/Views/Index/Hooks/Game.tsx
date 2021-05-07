@@ -6,6 +6,7 @@ import * as H from 'history'
 
 // COMPONENTES
 import loginAlert from 'Components/LoginAlert/LoginAlert'
+import createOfflineGame from '../Components/CreateOfflineGame'
 import createJoinMenu from '../Components/CreateJoinMenu'
 import createGameMenu from '../Components/CreateMenu'
 
@@ -45,6 +46,15 @@ const useGame = (user: User | null, lang: Es, history: H.History<H.LocationState
 								group_add
 							</span>
 							{lang.welcomeBtns.join}
+						</button>
+						<button
+							type='button'
+							onClick={() => createOfflineGame(lang, history)}
+							style={{ ...welcomeBtn, backgroundColor: '#4CAF50' }}>
+							<span style={welcomeBtnSpan} className='material-icons-two-tone'>
+								cloud_off
+							</span>
+							{lang.welcomeBtns.offline}
 						</button>
 					</div>
 				),

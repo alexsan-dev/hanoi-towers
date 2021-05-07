@@ -1,7 +1,7 @@
 // ESTILOS
 export const welcomeBtnsContainer: React.CSSProperties = {
 	display: 'grid',
-	gridTemplateColumns: 'auto auto',
+	gridTemplateColumns: 'auto auto auto',
 	gridTemplateRows: 'auto',
 	gridColumnGap: '10px',
 	width: 'max-content',
