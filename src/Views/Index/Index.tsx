@@ -28,7 +28,7 @@ const IndexView = () => {
 	useGame(user, lang, history)
 
 	return (
-		<div>
+		<div className={Styles.container}>
 			<HomeButton />
 			<h1 className={Styles.title}>{lang.home.title}</h1>
 			<p className={Styles.description}>

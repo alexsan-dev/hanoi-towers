@@ -22,12 +22,20 @@ const LogoutButton: React.FC<LogoutButtonProps> = (props: LogoutButtonProps) => 
 	// STRINGS
 	const lang = useStrings()
 
+	// CERRAR
+	const logoutEv = () =>
+		window.Alert({
+			...lang.logoutAlert,
+			type: 'confirm',
+			onConfirm: () => logout(),
+		})
+
 	return (
 		<div>
 			{user !== null && (
 				<button
 					type='button'
-					onClick={props.blockLogout ? undefined : logout}
+					onClick={props.blockLogout ? undefined : logoutEv}
 					className={Styles.logoutBtn}>
 					<img src={user?.picture || ''} alt='User' />
 					<strong>

@@ -11,6 +11,7 @@ export interface Es {
     welcomeBtns:   WelcomeBtns;
     homeButton:    HomeButton;
     logout:        string;
+    logoutAlert:   Login;
     initPrompt:    HomeButton;
     joinPrompt:    HomeButton;
     offlinePrompt: HomeButton;

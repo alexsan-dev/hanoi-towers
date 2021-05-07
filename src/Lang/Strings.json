@@ -29,6 +29,10 @@
 			"confirmText": "Regresar"
 		},
 		"logout": "Cerrar sesión",
+		"logoutAlert": {
+			"title": "Cerrar sesión",
+			"body": "¿Estas seguro de querer cerrar sesión?, siempre podrás ingresar con cualquier cuenta de ingeniería."
+		},
 		"initPrompt": {
 			"title": "Crear partida",
 			"confirmText": "JUGAR",

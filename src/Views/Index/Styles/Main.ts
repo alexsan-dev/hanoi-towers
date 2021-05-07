@@ -22,7 +22,7 @@ export const welcomeBtn: React.CSSProperties = {
 	background: '#03A9F4',
 	fontSize: '1.4em',
 	fontWeight: 'bold',
-	width: '100px',
+	width: '110px',
 	height: '100px',
 	borderRadius: '10px',
 	cursor: 'pointer',
