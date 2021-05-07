@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 
 // COMPONENTES
+import RecommendedMovements from 'Components/RecommendedMovements/RecommendedMovements'
 import InstallButton from 'Components/InstallButton/InstallButton'
 import LogoutButton from 'Components/LogoutButton/LogoutButton'
 import loginAlert from 'Components/LoginAlert/LoginAlert'
@@ -36,6 +37,9 @@ const OfflineView: React.FC<OfflineViewProps> = (props: OfflineViewProps) => {
 	// RENDER
 	const renderer = useRenderer()
 
+	// DISCOS
+	const limitedDisks: number = Math.min(7, +props.disks)
+
 	// ALERTA DE INICIO
 	useEffect(() => {
 		if (!user) loginAlert(lang)
@@ -46,7 +50,7 @@ const OfflineView: React.FC<OfflineViewProps> = (props: OfflineViewProps) => {
 	const userName = user?.name
 	useEffect(() => {
 		if (firstInstance && camera && scene && renderer && userName) {
-			createGame(userName.split(' ')[0], +props.disks, camera, scene, renderer, undefined, true)
+			createGame(userName.split(' ')[0], limitedDisks, camera, scene, renderer, undefined, true)
 			firstInstance = false
 		}
 	}, [userName, props.disks, camera, scene, renderer, firstInstance])
@@ -65,6 +69,7 @@ const OfflineView: React.FC<OfflineViewProps> = (props: OfflineViewProps) => {
 					https://github.com/alexsan-dev
 				</a>
 			</p>
+			<RecommendedMovements disks={limitedDisks} />
 			<LogoutButton />
 			<InstallButton />
 		</div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import * as THREE from 'three'
+import diskColors from 'Utils/Colors'
 import EventsControls from './Controls'
 
 // CREAR JUEGO
@@ -58,8 +59,6 @@ const createGame = (
 			stacksDisk[i] = []
 			stacksDisk[i].push(countDisk)
 		}
-
-		const diskColors = ['#F44336', '#FF4081', '#9C27B0', '#448AFF', '#009688', '#4CAF50', '#FFEB3B']
 
 		for (let i = 0; i < countDisk; i++) {
 			const geometryN = new THREE.TorusGeometry(36 - 4 * i, (heightDisk + 2) / 2, 36, 36)

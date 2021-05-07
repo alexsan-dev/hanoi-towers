@@ -15,3 +15,10 @@ interface Timer {
 	seconds: number
 	minutes: number
 }
+
+interface StackDisk {
+	n: number
+	color: string
+	towerFrom: string
+	towerTo: string
+}
