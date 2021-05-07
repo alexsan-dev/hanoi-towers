@@ -1,0 +1,20 @@
+{
+	"short_name": "Hanoi Towers",
+	"name": "Hanoi Towers",
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#511F73",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "/img/logo.png",
+			"sizes": "512x512"
+		},
+		{
+			"src": "/img/logo.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	]
+}

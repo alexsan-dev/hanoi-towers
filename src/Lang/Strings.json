@@ -1,0 +1,45 @@
+{
+	"es": {
+		"home": {
+			"title": "Torres de Hanoi",
+			"description": "Creado por Alex Santos",
+			"install": "Instalar juego"
+		},
+		"login": {
+			"title": "Iniciar sesión",
+			"body": "Para poder jugar en una partida es necesario iniciar sesión primero con tu correo institucional."
+		},
+		"loginBtn": "Iniciar con @ingenieria",
+		"welcome": {
+			"title": "Bienvenido {{name}}",
+			"body": "Para iniciar selecciona \"Crear\", o \"Unirse\" y espera a que los demás jugadores estén listos para jugar."
+		},
+		"startGame": {
+			"title": "Iniciar partida",
+			"body": "¿Estas listo?, tu tiempo empezara a correr cuando presiones el botón de Jugar, intenta terminar rápido."
+		},
+		"welcomeBtns": {
+			"create": "Crear",
+			"join": "Unirse"
+		},
+		"logout": "Cerrar sesión",
+		"initPrompt": {
+			"title": "Crear partida",
+			"confirmText": "JUGAR",
+			"body": "Gracias por jugar, para iniciar indica el titulo y el número de aros. Por ultimo solo presiona JUGAR."
+		},
+		"joinPrompt": {
+			"title": "Unirse a partida",
+			"confirmText": "Unirse",
+			"body": "Gracias por jugar, ingresa el ID de la partida a la que quieres unirte, y luego presiona unirse."
+		},
+		"promptFields": {
+			"title": "Titulo de la partida",
+			"titleHelp": "Texto corto",
+			"disk": "Numero de discos",
+			"link": "ID de la partida",
+			"linkHelp": "Sin espacios",
+			"diskHelp": "Máximo 7 discos"
+		}
+	}
+}

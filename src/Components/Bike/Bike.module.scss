@@ -1,0 +1,40 @@
+.container {
+	position: fixed;
+	bottom: 0;
+	height: 100px;
+	width: 97%;
+	display: flex;
+	justify-content: flex-end;
+	pointer-events: none;
+	transition: transform 1s ease-in-out;
+
+	span {
+		position: absolute;
+		bottom: 5px;
+		left: 0;
+		width: 93%;
+		border-radius: 50px;
+		height: 5px;
+	}
+
+	img:first-child {
+		position: absolute;
+		top: -40px;
+		right: 25px;
+		width: 35px;
+		height: 35px;
+		border-radius: 100%;
+	}
+
+	img:nth-child(2) {
+		height: 100%;
+		margin-right: -103px;
+	}
+
+	.cover {
+		position: relative;
+		z-index: 2;
+		opacity: 0.8;
+		filter: invert(15%);
+	}
+}

@@ -1,0 +1,20 @@
+.button {
+	background: #fff;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	display: flex;
+	align-items: center;
+	border: none;
+	padding: 10px 15px;
+	outline: none;
+	appearance: none;
+	border-radius: 5px;
+	cursor: pointer;
+	z-index: 10000;
+
+	span:last-child {
+		margin-left: 5px;
+		font-weight: bold;
+	}
+}
