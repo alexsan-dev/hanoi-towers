@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 
 // ASSETS
 import Winner from 'Assets/winner.gif'
+import Profile from 'Assets/profile.png'
 
 // COMPONENTES
 import createGame from 'Components/Game/Game'
@@ -111,6 +112,7 @@ export const useStartGame = (
 								customElements: (
 									<div
 										style={{
+											position: 'relative',
 											display: 'flex',
 											justifyContent: 'center',
 										}}>
@@ -119,33 +121,81 @@ export const useStartGame = (
 												position: 'absolute',
 												top: '65px',
 											}}>
-											<img
+											<div
 												style={{
-													borderRadius: '100%',
-													position: 'relative',
-													top: '75px',
-													height: '70px',
-													width: '70px',
-												}}
-												src={orderedTimes[1] ? orderedTimes[1].picture || '' : ''}
-												alt='Second'
-											/>
-											<img
-												style={{ borderRadius: '100%', margin: '0px 10px' }}
-												src={orderedTimes[0] ? orderedTimes[0].picture || '' : ''}
-												alt='First'
-											/>
-											<img
+													position: 'absolute',
+													left: '-75px',
+													top: '60px',
+													display: 'flex',
+													flexDirection: 'column',
+													alignItems: 'center',
+												}}>
+												<p style={{ textTransform: 'capitalize' }}>
+													{orderedTimes[1]
+														? `${orderedTimes[1].name
+																.split(' ')[0]
+																.toLowerCase()} ${orderedTimes[1].name.split(' ')[2].toLowerCase()}`
+														: ''}
+												</p>
+												<img
+													style={{
+														borderRadius: '100%',
+														height: '70px',
+														width: '70px',
+														objectFit: 'cover',
+													}}
+													src={orderedTimes[1] ? orderedTimes[1].picture || Profile : Profile}
+													alt='Second'
+												/>
+											</div>
+											<div
 												style={{
-													borderRadius: '100%',
-													position: 'relative',
-													top: '75px',
-													height: '70px',
-													width: '70px',
-												}}
-												src={orderedTimes[2] ? orderedTimes[2].picture || '' : ''}
-												alt='Third'
-											/>
+													display: 'flex',
+													alignItems: 'center',
+													justifyContent: 'center',
+													flexDirection: 'column',
+													marginTop: '-70px',
+												}}>
+												<strong style={{ textTransform: 'capitalize', marginBottom: '10px' }}>
+													{orderedTimes[0]
+														? `${orderedTimes[0].name
+																.split(' ')[0]
+																.toLowerCase()} ${orderedTimes[0].name.split(' ')[2].toLowerCase()}`
+														: ''}
+												</strong>
+												<img
+													style={{ borderRadius: '100%', margin: '0px 10px', objectFit: 'cover' }}
+													src={orderedTimes[0] ? orderedTimes[0].picture || Profile : Profile}
+													alt='First'
+												/>
+											</div>
+											<div
+												style={{
+													position: 'absolute',
+													right: '-75px',
+													top: '60px',
+													display: 'flex',
+													flexDirection: 'column',
+													alignItems: 'center',
+												}}>
+												<p style={{ textTransform: 'capitalize' }}>
+													{orderedTimes[2]
+														? `${orderedTimes[2].name
+																.split(' ')[0]
+																.toLowerCase()} ${orderedTimes[2].name.split(' ')[2].toLowerCase()}`
+														: ''}
+												</p>
+												<img
+													style={{
+														borderRadius: '100%',
+														objectFit: 'cover',
+														height: '70px',
+														width: '70px',
+													}}
+													src={orderedTimes[2] ? orderedTimes[2].picture || Profile : Profile}
+													alt='Third'
+												/>
+											</div>
 										</div>
 										<img src={Winner} alt='First Anim' />
 									</div>
