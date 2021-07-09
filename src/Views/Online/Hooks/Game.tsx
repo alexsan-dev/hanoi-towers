@@ -134,7 +134,9 @@ export const useStartGame = (
 													{orderedTimes[1]
 														? `${orderedTimes[1].name
 																.split(' ')[0]
-																.toLowerCase()} ${orderedTimes[1].name.split(' ')[2].toLowerCase()}`
+																.toLowerCase()} ${orderedTimes[1].name
+																.split(' ')[2]
+																?.toLowerCase()}`
 														: ''}
 												</p>
 												<img
@@ -160,7 +162,9 @@ export const useStartGame = (
 													{orderedTimes[0]
 														? `${orderedTimes[0].name
 																.split(' ')[0]
-																.toLowerCase()} ${orderedTimes[0].name.split(' ')[2].toLowerCase()}`
+																.toLowerCase()} ${orderedTimes[0].name
+																.split(' ')[2]
+																?.toLowerCase()}`
 														: ''}
 												</strong>
 												<img
@@ -182,7 +186,9 @@ export const useStartGame = (
 													{orderedTimes[2]
 														? `${orderedTimes[2].name
 																.split(' ')[0]
-																.toLowerCase()} ${orderedTimes[2].name.split(' ')[2].toLowerCase()}`
+																.toLowerCase()} ${orderedTimes[2].name
+																.split(' ')[2]
+																?.toLowerCase()}`
 														: ''}
 												</p>
 												<img
