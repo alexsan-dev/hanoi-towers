@@ -42,7 +42,6 @@ export const getAuth = async (): Promise<(() => firebase.default.auth.Auth) | nu
 
 		// PROVIDERS ( GOOGLE SOLO PARA INGENIERÍA )
 		gProvider = new firebase.default.auth.GoogleAuthProvider()
-		gProvider.setCustomParameters({ hd: 'ingenieria.usac.edu.gt' })
 	}
 
 	// LISTENER

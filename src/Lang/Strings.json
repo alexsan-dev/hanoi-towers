@@ -9,7 +9,7 @@
 			"title": "Iniciar sesión",
 			"body": "Para poder jugar en una partida es necesario iniciar sesión primero con tu correo institucional."
 		},
-		"loginBtn": "Iniciar con @ingenieria",
+		"loginBtn": "Iniciar con Google",
 		"welcome": {
 			"title": "Bienvenido {{name}}",
 			"body": "Para iniciar selecciona \"Crear\", o \"Unirse\" y espera a que los demás jugadores estén listos para jugar."
